@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+  
+
+    <Definition xsi:type="MyObjectBuilder_CockpitDefinition">
+      <Id>
+        <TypeId>Cockpit</TypeId>
+        <SubtypeId>MA_HeavyBridge</SubtypeId>
+        <!-- Flight seat -->
+      </Id>
+      <DisplayName>MA_HeavyBridge</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\CockpitOpen.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1" />
+      <ModelOffset x="0" y="-.25" z="0.25" />
+      <Model>Models\MA_HeavyBridge.mwm</Model>
+      <PrimarySound>BlockCockpitFlightSeat</PrimarySound>
+	   <CharacterAnimation>FighterCockpitPosture</CharacterAnimation>
+      <!--CharacterAnimation>cockpit23</CharacterAnimation-->
+      <UsesDeformation>false</UsesDeformation>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="10" />
+        <Component Subtype="Construction" Count="15" />
+        <Component Subtype="Motor" Count="2" />
+        <Component Subtype="Computer" Count="100" />
+        <Component Subtype="Display" Count="4" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="InteriorPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Display" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.3" StartY="0.25" EndX="0.7" EndY="0.85" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\CockpitOpenConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\CockpitOpenConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\CockpitOpenConstruction_3.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>MA_HeavyBridge</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <EnableFirstPerson>true</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>false</EnableBuilderCockpit>
+      <IsPressurized>false</IsPressurized>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <!-- (this is just for builder mode) 
+	  <RaycastOffset>
+        <X>0.016</X>
+        <Y>0.4983</Y>
+        <Z>0.15</Z>
+      </RaycastOffset-->
+      <PCU>15</PCU>
+    </Definition>
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+
+
+		
+    </CubeBlocks>
+    <BlockPositions></BlockPositions>
+</Definitions>

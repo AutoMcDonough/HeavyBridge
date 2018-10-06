@@ -1,0 +1,20 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>MA Interior</DisplayName>
+      <Name>AutoMcD_Astronautical_Interior</Name>
+      <ItemIds>
+        //<string>Passage/MA_int_wall_plain</string>
+		//<string>Passage/MA_int_out_corner</string>
+		//<string>Passage/MA_int_in_corner</string>
+		//<string>Passage/MA_int_in_corner_bath</string>
+        
+      </ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>
